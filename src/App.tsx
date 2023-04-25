@@ -1,10 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TrackerModule from './TrakerModule';
 
+const Button=(children:JSX.Element)=>{
+  <button>{children}</button>
+}
 function App() {
   return (
+    
     <div className="App">
+      <TrackerModule></TrackerModule>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +24,11 @@ function App() {
         >
           Learn React
         </a>
+         <button id="rr" data-analytics-onclick="SendData"> click me</button>
+         <button > try me</button>
+
       </header>
+     
     </div>
   );
 }
